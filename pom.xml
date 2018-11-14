@@ -5,9 +5,8 @@
     <groupId>com.pik.contact</groupId>
     <artifactId>contact</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <!-- uncomment for WAR deployment
     <packaging>war</packaging>
-    -->
+   
 
     <parent>
         <groupId>org.springframework.boot</groupId>
