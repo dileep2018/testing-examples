@@ -11,10 +11,7 @@ public class SeleniumDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            File pathToBinary = new File("/usr/bin/firefox");
-            FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-            FirefoxProfile firefoxProfile = new FirefoxProfile();
-            WebDriver driver = new FirefoxDriver(ffBinary,firefoxProfile);
+            System.setProperty("webdriver.gecko.driver","/usr/local/bin/geckodriver");
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
