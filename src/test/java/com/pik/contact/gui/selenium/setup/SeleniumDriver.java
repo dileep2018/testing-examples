@@ -11,7 +11,7 @@ public class SeleniumDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-          	WebDriver driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
+            driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
         return driver;
