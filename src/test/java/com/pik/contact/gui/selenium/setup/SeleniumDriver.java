@@ -11,7 +11,6 @@ public class SeleniumDriver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            File pathToBinary = new File("/home/ubuntu/.mozilla/firefox/s7hoae7c.default");
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
