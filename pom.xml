@@ -163,7 +163,7 @@
            <artifactId>selenium-server</artifactId>
            <version>3.141.5</version>
         </dependency>  
-	</dependency>
+	<dependency>
         <groupId>org.uncommons</groupId>
         <artifactId>reportng</artifactId>
         <version>1.1.2</version>
