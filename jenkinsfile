@@ -1,6 +1,6 @@
 node('javaslave') {	
  stage('SCM Checkout'){
-         git 'https://github.com/adghb/java-demo'
+         git 'https:https://github.com/dileep2018/testing-examples'
    }
    stage('validate'){
        // Get maven home path
