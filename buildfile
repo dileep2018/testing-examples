@@ -1,4 +1,4 @@
-node('javaslave') {	
+node {	
  stage('SCM Checkout'){
          git 'https:https://github.com/dileep2018/testing-examples'
    }
