@@ -1,0 +1,14 @@
+
+node('javaslave') {	
+ stage('SCM Checkout'){
+         git 'https:https://github.com/dileep2018/testing-examples'
+   }
+    stage('Deploy to Tomcat'){
+     sshagent(['tomcat']) {
+         sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@23.22.251.165:/opt/tomcat/webapps/'
+     }
+    }
+    stage ('Starting Zap') {
+     build job: 'zap'
+    }
+}
