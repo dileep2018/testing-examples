@@ -15,7 +15,6 @@ public class SeleniumDriver {
         if (driver == null) {
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-            driver.get("http://54.145.226.14:8081/contact/");
         }
         return driver;
     }
