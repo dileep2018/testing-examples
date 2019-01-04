@@ -18,8 +18,7 @@ public class SeleniumDriver {
        // }
       // if (driver == null) {
         return driver;
-    } 
-    
+    }  
     public static WebDriver getDriver() {
              driver = new ChromeDriver();    
              driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
