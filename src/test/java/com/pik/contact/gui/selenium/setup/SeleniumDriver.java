@@ -21,7 +21,7 @@ public class SeleniumDriver {
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         // return driver;
     }
-    public static WebDriver getDriver() {
+    public static WebDriver quitDriver() {
                      driver.quit();
      } 
 }
