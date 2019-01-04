@@ -24,5 +24,6 @@ public class SeleniumDriver {
     
     public static WebDriver closeDriver() {
                                  driver.close();
-   //}
+   }
   }
+}
