@@ -21,8 +21,6 @@ public class SeleniumDriver {
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
            // return driver;
             //driver.close();
-    }
-    
     public void close() {
         driver.close();
   }
