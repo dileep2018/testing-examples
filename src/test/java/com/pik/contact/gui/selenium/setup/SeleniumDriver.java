@@ -16,11 +16,9 @@ public class SeleniumDriver {
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
        // }
+            driver = new ChromeDriver();    
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
       // if (driver == null) {
         return driver;
-    }  
-    public static WebDriver getDriver() {
-             driver = new ChromeDriver();    
-             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
-}
+ }
