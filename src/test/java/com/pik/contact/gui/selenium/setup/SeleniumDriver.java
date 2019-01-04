@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumDriver {
-
+    @BeforeClass
     static private WebDriver driver;
 
     public static WebDriver getDriver() {
@@ -20,9 +20,10 @@ public class SeleniumDriver {
             driver = new ChromeDriver();    
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
            // return driver;
-            //driver.close();
-    public void close() {
+           //driver.close();
+    }
+    @AfterClass
+    static private WebDriver driver close() {
         driver.close();
      }
   }
-}
