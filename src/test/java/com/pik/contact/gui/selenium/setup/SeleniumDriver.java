@@ -20,7 +20,7 @@ public class SeleniumDriver {
             driver = new ChromeDriver();    
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
          return driver;
-         driver.quit(){
-     } 
     }
+       driver.quit(){
+     } 
 }
