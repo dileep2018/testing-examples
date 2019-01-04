@@ -274,26 +274,26 @@
           </execution>
         </executions>
       </plugin>
-       <plugin>
-             <groupId>net.masterthought</groupId>
-             <artifactId>maven-cucumber-reporting</artifactId>
-             <version>3.13.0</version>
-             <executions>
-                <execution>
-                   <id>execution</id>
-                   <phase>verify</phase>
-                   <goals>
-                      <goal>generate</goal>
-                   </goals>
-                   <configuration>
-                      <projectName>Simplify360 Automation Test Report</projectName>
-                      <outputDirectory>${project.build.directory}/site/cucumber-reports</outputDirectory>                      
-   <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-                      <buildNumber>8.4.1.2</buildNumber>
-                   </configuration>
-                </execution>
-             </executions>
-          </plugin>	
+          <plugin>
+                        <groupId>net.masterthought</groupId>
+                        <artifactId>maven-cucumber-reporting</artifactId>
+                        <version>3.16.0</version>
+                        <executions>
+                            <execution>
+                                <id>execution</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>generate</goal>
+                                </goals>
+                                <configuration>
+                                    <projectName>>contact</projectName>
+                                    <outputDirectory>${project.build.directory}</outputDirectory>
+                                    <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                                    <checkBuildResult>true</checkBuildResult>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
         </plugins>
     </build>
 
