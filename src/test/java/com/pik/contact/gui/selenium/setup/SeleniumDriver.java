@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.concurrent.TimeUnit;
 
 public class SeleniumDriver {
+    
     static private WebDriver driver;
 
     public static WebDriver getDriver() {
