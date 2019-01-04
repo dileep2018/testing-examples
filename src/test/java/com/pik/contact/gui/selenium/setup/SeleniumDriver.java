@@ -20,7 +20,7 @@ public class SeleniumDriver {
             Thread.sleep(3000);
             driver = new ChromeDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        }
+       // }
         return driver;
     }
 }
