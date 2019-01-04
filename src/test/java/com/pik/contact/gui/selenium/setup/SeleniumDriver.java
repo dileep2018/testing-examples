@@ -23,7 +23,8 @@ public class SeleniumDriver {
            //driver.close();
     }
     @AfterClass
+    
     static private WebDriver driver close() {
-        driver.close();
-     }
+                                 driver.close();
+    }
   }
