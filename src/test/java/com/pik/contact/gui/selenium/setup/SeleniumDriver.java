@@ -15,11 +15,15 @@ public class SeleniumDriver {
        // if (driver == null) {
             driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        //}
+       // }
       // if (driver == null) {
             driver = new ChromeDriver();    
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-            return driver;
-            driver.close();
-     }
+           // return driver;
+            //driver.close();
+    }
+    
+    public void close() {
+        driver.close();
+  }
 }
