@@ -17,7 +17,7 @@ public class SeleniumDriver {
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         //}
       // if (driver == null) {
-            driver = new ChromeDriver();    //can be replaced with HtmlUnitDriver for better performance
+            driver = new ChromeDriver();    
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
        // }
         return driver;
