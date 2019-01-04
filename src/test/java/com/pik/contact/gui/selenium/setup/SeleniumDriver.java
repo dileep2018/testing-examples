@@ -22,7 +22,7 @@ public class SeleniumDriver {
            //driver.close();
     //}
     
-    public static WebDriver closeDriver() {
+    public static WebDriver close() {
                                  driver.close();
    }
   }
