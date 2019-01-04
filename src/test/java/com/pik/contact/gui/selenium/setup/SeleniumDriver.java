@@ -19,11 +19,7 @@ public class SeleniumDriver {
             driver = new ChromeDriver();    
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
            // return driver;
-           //driver.close();
-    //}
+           driver.quit();
     
-    public static WebDriver close() {
-                                 driver.close();
    }
-  }
 }
