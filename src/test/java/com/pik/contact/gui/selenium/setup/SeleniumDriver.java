@@ -24,5 +24,5 @@ public class SeleniumDriver {
     public static WebDriver quitDriver() {
                      driver.quit();
      } 
-    }
+  }
 }
