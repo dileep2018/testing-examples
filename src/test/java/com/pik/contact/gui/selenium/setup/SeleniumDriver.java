@@ -23,5 +23,6 @@ public class SeleniumDriver {
             //driver.close();
     public void close() {
         driver.close();
+     }
   }
 }
