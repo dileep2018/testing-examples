@@ -16,9 +16,9 @@ public class SeleniumDriver {
         if (driver == null) {
             driver = new ChromeDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-             public static WebDriver getDriver() {
+            public static WebDriver getDriver() {
         if (driver == null) {
-            driver = new firefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
+            driver = new FirefoxDriver();    //can be replaced with HtmlUnitDriver for better performance
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
             public static WebDriver getDriver() {
         }
