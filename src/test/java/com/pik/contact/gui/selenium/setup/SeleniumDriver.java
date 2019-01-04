@@ -21,4 +21,3 @@ public class SeleniumDriver {
             driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         }
      }
-}
